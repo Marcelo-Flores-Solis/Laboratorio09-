@@ -1,0 +1,116 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+
+.landing-grid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "main"
+    "footer";
+  gap: 10px;
+}
+
+
+header {
+  grid-area: header;
+  background-color: #007acc;
+  color: white;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.hero {
+  grid-area: hero;
+  background: linear-gradient(to right, #007acc, #00b4d8);
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.hero button {
+  background-color: white;
+  color: #007acc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hero button:hover {
+  background-color: #e0e0e0;
+}
+
+
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #007acc;
+  color: white;
+  padding: 10px;
+}
